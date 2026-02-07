@@ -1,0 +1,339 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../fpga_conway.gen/sources_1/bd/conway_tb",
+      "name": "conway_tb",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2"
+    },
+    "design_tree": {
+      "sim_clk_gen_0": "",
+      "vga_controller_0": "",
+      "pattern_generator_0": "",
+      "conway_game_0": "",
+      "xlconstant_0": ""
+    },
+    "components": {
+      "sim_clk_gen_0": {
+        "vlnv": "xilinx.com:ip:sim_clk_gen:1.0",
+        "ip_revision": "5",
+        "xci_name": "conway_tb_sim_clk_gen_0_0",
+        "xci_path": "ip/conway_tb_sim_clk_gen_0_0/conway_tb_sim_clk_gen_0_0.xci",
+        "inst_hier_path": "sim_clk_gen_0"
+      },
+      "vga_controller_0": {
+        "vlnv": "xilinx.com:module_ref:vga_controller:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_tb_vga_controller_0_0",
+        "xci_path": "ip/conway_tb_vga_controller_0_0/conway_tb_vga_controller_0_0.xci",
+        "inst_hier_path": "vga_controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "conway_tb_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "req_red": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "req_green": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "req_blue": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "hsync": {
+            "direction": "O"
+          },
+          "vsync": {
+            "direction": "O"
+          },
+          "new_frame": {
+            "direction": "O"
+          },
+          "end_frame": {
+            "direction": "O"
+          },
+          "pixel_ligne": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "pixel_col": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "pattern_generator_0": {
+        "vlnv": "xilinx.com:module_ref:pattern_generator:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_tb_pattern_generator_0_0",
+        "xci_path": "ip/conway_tb_pattern_generator_0_0/conway_tb_pattern_generator_0_0.xci",
+        "inst_hier_path": "pattern_generator_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pattern_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "user_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "conway_tb_sim_clk_gen_0_0_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "pixel_line": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "pixel_col": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "shift_line_en": {
+            "direction": "I"
+          },
+          "shift_col_en": {
+            "direction": "I"
+          },
+          "req_red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "req_green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "req_blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "conway_game_0": {
+        "vlnv": "xilinx.com:module_ref:conway_game:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_tb_conway_game_0_0",
+        "xci_path": "ip/conway_tb_conway_game_0_0/conway_tb_conway_game_0_0.xci",
+        "inst_hier_path": "conway_game_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "conway_game",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I"
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "init_sel": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "trig_step": {
+            "direction": "I"
+          },
+          "trig_deliver": {
+            "direction": "I"
+          },
+          "pixel_ligne": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "pixel_col": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "conway_tb_xlconstant_0_0",
+        "xci_path": "ip/conway_tb_xlconstant_0_0/conway_tb_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "pattern_generator_0_req_blue": {
+        "ports": [
+          "pattern_generator_0/req_blue",
+          "vga_controller_0/req_blue"
+        ]
+      },
+      "pattern_generator_0_req_green": {
+        "ports": [
+          "pattern_generator_0/req_green",
+          "vga_controller_0/req_green"
+        ]
+      },
+      "pattern_generator_0_req_red": {
+        "ports": [
+          "pattern_generator_0/req_red",
+          "vga_controller_0/req_red"
+        ]
+      },
+      "sim_clk_gen_0_clk": {
+        "ports": [
+          "sim_clk_gen_0/clk",
+          "pattern_generator_0/clk_100m",
+          "vga_controller_0/clk_100m",
+          "conway_game_0/clk_100m"
+        ]
+      },
+      "sim_clk_gen_0_sync_rst": {
+        "ports": [
+          "sim_clk_gen_0/sync_rst",
+          "pattern_generator_0/rstn",
+          "vga_controller_0/rstn",
+          "conway_game_0/rstn"
+        ]
+      },
+      "vga_controller_0_end_frame": {
+        "ports": [
+          "vga_controller_0/end_frame",
+          "conway_game_0/trig_deliver"
+        ]
+      },
+      "vga_controller_0_new_frame": {
+        "ports": [
+          "vga_controller_0/new_frame",
+          "pattern_generator_0/shift_line_en",
+          "pattern_generator_0/shift_col_en",
+          "conway_game_0/trig_step"
+        ]
+      },
+      "vga_controller_0_pixel_col": {
+        "ports": [
+          "vga_controller_0/pixel_col",
+          "pattern_generator_0/pixel_col",
+          "conway_game_0/pixel_col"
+        ]
+      },
+      "vga_controller_0_pixel_ligne1": {
+        "ports": [
+          "vga_controller_0/pixel_ligne",
+          "pattern_generator_0/pixel_line",
+          "conway_game_0/pixel_ligne"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "conway_game_0/init_sel"
+        ]
+      }
+    }
+  }
+}

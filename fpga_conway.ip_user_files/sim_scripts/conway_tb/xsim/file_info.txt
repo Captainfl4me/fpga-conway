@@ -1,0 +1,7 @@
+conway_tb_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/conway_tb/ip/conway_tb_sim_clk_gen_0_0/sim/conway_tb_sim_clk_gen_0_0.v,
+conway_tb_vga_controller_0_0.vhd,vhdl,xil_defaultlib,../../../bd/conway_tb/ip/conway_tb_vga_controller_0_0/sim/conway_tb_vga_controller_0_0.vhd,
+conway_tb_pattern_generator_0_0.vhd,vhdl,xil_defaultlib,../../../bd/conway_tb/ip/conway_tb_pattern_generator_0_0/sim/conway_tb_pattern_generator_0_0.vhd,
+conway_tb_conway_game_0_0.vhd,vhdl,xil_defaultlib,../../../bd/conway_tb/ip/conway_tb_conway_game_0_0/sim/conway_tb_conway_game_0_0.vhd,
+conway_tb_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/conway_tb/ip/conway_tb_xlconstant_0_0/sim/conway_tb_xlconstant_0_0.v,
+conway_tb.vhd,vhdl,xil_defaultlib,../../../bd/conway_tb/sim/conway_tb.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

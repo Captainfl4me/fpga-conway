@@ -1,0 +1,768 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7EEEBEFEB5FD3D36",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../fpga_conway.gen/sources_1/bd/conway_top",
+      "name": "conway_top",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "vga_controller_0": "",
+      "pattern_generator_0": "",
+      "clk_wiz_0": "",
+      "proc_sys_reset_0": "",
+      "conway_game_0": "",
+      "vga_mux_0": "",
+      "input_ctrl_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "conway_top_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "vsync_0": {
+        "direction": "O"
+      },
+      "blue_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "hsync_0": {
+        "direction": "O"
+      },
+      "green_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "red_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "btnU": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      }
+    },
+    "components": {
+      "vga_controller_0": {
+        "vlnv": "xilinx.com:module_ref:vga_controller:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_top_vga_controller_0_0",
+        "xci_path": "ip/conway_top_vga_controller_0_0/conway_top_vga_controller_0_0.xci",
+        "inst_hier_path": "vga_controller_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "req_red": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "req_green": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "req_blue": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "hsync": {
+            "direction": "O"
+          },
+          "vsync": {
+            "direction": "O"
+          },
+          "new_frame": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "end_frame": {
+            "direction": "O"
+          },
+          "pixel_ligne": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "pixel_col": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "pattern_generator_0": {
+        "vlnv": "xilinx.com:module_ref:pattern_generator:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_top_pattern_generator_0_1",
+        "xci_path": "ip/conway_top_pattern_generator_0_1/conway_top_pattern_generator_0_1.xci",
+        "inst_hier_path": "pattern_generator_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "pattern_generator",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "pixel_line": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "pixel_col": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "shift_line_en": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "data",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "shift_col_en": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "data",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "req_red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "req_green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "req_blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "ip_revision": "15",
+        "xci_name": "conway_top_clk_wiz_0_0",
+        "xci_path": "ip/conway_top_clk_wiz_0_0/conway_top_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "USE_LOCKED": {
+            "value": "true"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "proc_sys_reset_0": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "ip_revision": "16",
+        "xci_name": "conway_top_proc_sys_reset_0_0",
+        "xci_path": "ip/conway_top_proc_sys_reset_0_0/conway_top_proc_sys_reset_0_0.xci",
+        "inst_hier_path": "proc_sys_reset_0"
+      },
+      "conway_game_0": {
+        "vlnv": "xilinx.com:module_ref:conway_game:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_top_conway_game_0_0",
+        "xci_path": "ip/conway_top_conway_game_0_0/conway_top_conway_game_0_0.xci",
+        "inst_hier_path": "conway_game_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "conway_game",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "init_sel": {
+            "direction": "I",
+            "left": "0",
+            "right": "0"
+          },
+          "trig_step": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "data",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "trig_deliver": {
+            "direction": "I"
+          },
+          "pixel_ligne": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "pixel_col": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "vga_mux_0": {
+        "vlnv": "xilinx.com:module_ref:vga_mux:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_top_vga_mux_0_0",
+        "xci_path": "ip/conway_top_vga_mux_0_0/conway_top_vga_mux_0_0.xci",
+        "inst_hier_path": "vga_mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "vga_mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I",
+            "left": "0",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "red0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "green0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "blue0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "red1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "green1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "blue1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "red": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "green": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "input_ctrl_0": {
+        "vlnv": "xilinx.com:module_ref:input_ctrl:1.0",
+        "ip_revision": "1",
+        "xci_name": "conway_top_input_ctrl_0_0",
+        "xci_path": "ip/conway_top_input_ctrl_0_0/conway_top_input_ctrl_0_0.xci",
+        "inst_hier_path": "input_ctrl_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "input_ctrl",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_100m": {
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sw": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "btnU": {
+            "direction": "I"
+          },
+          "new_frame": {
+            "direction": "I",
+            "parameters": {
+              "PortType": {
+                "value": "undef",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "end_frame": {
+            "direction": "I"
+          },
+          "vga_mux": {
+            "direction": "O",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "undef",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "shift_col": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "data",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "shift_line": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "data",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel_init": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "trig_step": {
+            "direction": "O",
+            "parameters": {
+              "PortType": {
+                "value": "data",
+                "value_src": "ip_prop"
+              },
+              "PortType.PROP_SRC": {
+                "value": "false",
+                "value_src": "ip_prop"
+              }
+            }
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "proc_sys_reset_0/peripheral_aresetn",
+          "pattern_generator_0/rstn",
+          "vga_controller_0/rstn",
+          "conway_game_0/rstn"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "proc_sys_reset_0/slowest_sync_clk",
+          "pattern_generator_0/clk_100m",
+          "vga_controller_0/clk_100m",
+          "conway_game_0/clk_100m",
+          "input_ctrl_0/clk_100m"
+        ]
+      },
+      "btnU_0_1": {
+        "ports": [
+          "btnU",
+          "input_ctrl_0/btnU"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "proc_sys_reset_0/dcm_locked"
+        ]
+      },
+      "conway_game_0_blue": {
+        "ports": [
+          "conway_game_0/blue",
+          "vga_mux_0/blue0"
+        ]
+      },
+      "conway_game_0_green": {
+        "ports": [
+          "conway_game_0/green",
+          "vga_mux_0/green0"
+        ]
+      },
+      "conway_game_0_red": {
+        "ports": [
+          "conway_game_0/red",
+          "vga_mux_0/red0"
+        ]
+      },
+      "ext_reset_in_0_1": {
+        "ports": [
+          "reset",
+          "proc_sys_reset_0/ext_reset_in"
+        ]
+      },
+      "input_ctrl_0_sel_init": {
+        "ports": [
+          "input_ctrl_0/sel_init",
+          "conway_game_0/init_sel"
+        ]
+      },
+      "input_ctrl_0_shift_col": {
+        "ports": [
+          "input_ctrl_0/shift_col",
+          "pattern_generator_0/shift_col_en"
+        ]
+      },
+      "input_ctrl_0_shift_line": {
+        "ports": [
+          "input_ctrl_0/shift_line",
+          "pattern_generator_0/shift_line_en"
+        ]
+      },
+      "input_ctrl_0_trig_step": {
+        "ports": [
+          "input_ctrl_0/trig_step",
+          "conway_game_0/trig_step"
+        ]
+      },
+      "input_ctrl_0_vga_mux": {
+        "ports": [
+          "input_ctrl_0/vga_mux",
+          "vga_mux_0/sel"
+        ]
+      },
+      "pattern_generator_0_req_blue": {
+        "ports": [
+          "pattern_generator_0/req_blue",
+          "vga_mux_0/blue1"
+        ]
+      },
+      "pattern_generator_0_req_green": {
+        "ports": [
+          "pattern_generator_0/req_green",
+          "vga_mux_0/green1"
+        ]
+      },
+      "pattern_generator_0_req_red": {
+        "ports": [
+          "pattern_generator_0/req_red",
+          "vga_mux_0/red1"
+        ]
+      },
+      "sw_0_1": {
+        "ports": [
+          "sw",
+          "input_ctrl_0/sw"
+        ]
+      },
+      "vga_controller_0_blue": {
+        "ports": [
+          "vga_controller_0/blue",
+          "blue_0"
+        ]
+      },
+      "vga_controller_0_end_frame": {
+        "ports": [
+          "vga_controller_0/end_frame",
+          "conway_game_0/trig_deliver",
+          "input_ctrl_0/end_frame"
+        ]
+      },
+      "vga_controller_0_green": {
+        "ports": [
+          "vga_controller_0/green",
+          "green_0"
+        ]
+      },
+      "vga_controller_0_hsync": {
+        "ports": [
+          "vga_controller_0/hsync",
+          "hsync_0"
+        ]
+      },
+      "vga_controller_0_new_frame": {
+        "ports": [
+          "vga_controller_0/new_frame",
+          "input_ctrl_0/new_frame"
+        ]
+      },
+      "vga_controller_0_pixel_col": {
+        "ports": [
+          "vga_controller_0/pixel_col",
+          "pattern_generator_0/pixel_col",
+          "conway_game_0/pixel_col"
+        ]
+      },
+      "vga_controller_0_pixel_ligne1": {
+        "ports": [
+          "vga_controller_0/pixel_ligne",
+          "pattern_generator_0/pixel_line",
+          "conway_game_0/pixel_ligne"
+        ]
+      },
+      "vga_controller_0_red": {
+        "ports": [
+          "vga_controller_0/red",
+          "red_0"
+        ]
+      },
+      "vga_controller_0_vsync": {
+        "ports": [
+          "vga_controller_0/vsync",
+          "vsync_0"
+        ]
+      },
+      "vga_mux_0_blue": {
+        "ports": [
+          "vga_mux_0/blue",
+          "vga_controller_0/req_blue"
+        ]
+      },
+      "vga_mux_0_green": {
+        "ports": [
+          "vga_mux_0/green",
+          "vga_controller_0/req_green"
+        ]
+      },
+      "vga_mux_0_red": {
+        "ports": [
+          "vga_mux_0/red",
+          "vga_controller_0/req_red"
+        ]
+      }
+    }
+  }
+}

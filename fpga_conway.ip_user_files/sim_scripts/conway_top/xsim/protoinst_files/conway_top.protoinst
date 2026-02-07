@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"conway_top": {
+			"proto_instances": {
+			}
+		}
+	}
+}

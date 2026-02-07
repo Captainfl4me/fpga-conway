@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="conway_tb_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="conway_tb_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="155.000000001 ms"></ZoomEndTime>
+      <Cursor1Time time="17.601345000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wave_markers>
+      <marker label="" time="65015000" />
+      <marker label="" time="27255000" />
+      <marker label="" time="59255000" />
+      <marker label="" time="63095000" />
+      <marker label="" time="33015000" />
+      <marker label="" time="58615000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/clk_100m">
+      <obj_property name="ElementShortName">clk_100m</obj_property>
+      <obj_property name="ObjectShortName">clk_100m</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/rstn">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/red">
+      <obj_property name="ElementShortName">red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/green">
+      <obj_property name="ElementShortName">green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/blue">
+      <obj_property name="ElementShortName">blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/hsync">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/vsync">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/U0/s_clk_div">
+      <obj_property name="ElementShortName">s_clk_div</obj_property>
+      <obj_property name="ObjectShortName">s_clk_div</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/U0/s_cnt_col">
+      <obj_property name="ElementShortName">s_cnt_col</obj_property>
+      <obj_property name="ObjectShortName">s_cnt_col</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/U0/s_cnt_line">
+      <obj_property name="ElementShortName">s_cnt_line</obj_property>
+      <obj_property name="ObjectShortName">s_cnt_line</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/U0/s_disp">
+      <obj_property name="ElementShortName">s_disp</obj_property>
+      <obj_property name="ObjectShortName">s_disp</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/pixel_ligne">
+      <obj_property name="ElementShortName">pixel_ligne[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_ligne[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/pixel_col">
+      <obj_property name="ElementShortName">pixel_col[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_col[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/red">
+      <obj_property name="ElementShortName">red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/green">
+      <obj_property name="ElementShortName">green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/blue">
+      <obj_property name="ElementShortName">blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/new_frame">
+      <obj_property name="ElementShortName">new_frame</obj_property>
+      <obj_property name="ObjectShortName">new_frame</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/end_frame">
+      <obj_property name="ElementShortName">end_frame</obj_property>
+      <obj_property name="ObjectShortName">end_frame</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider220" type="divider">
+      <obj_property name="label">Pixel generation</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/U0/s_cnt_col_nxt">
+      <obj_property name="ElementShortName">s_cnt_col_nxt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_cnt_col_nxt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/U0/s_cnt_line_nxt">
+      <obj_property name="ElementShortName">s_cnt_line_nxt[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_cnt_line_nxt[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/req_red">
+      <obj_property name="ElementShortName">req_red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">req_red[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/req_green">
+      <obj_property name="ElementShortName">req_green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">req_green[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/vga_controller_0/req_blue">
+      <obj_property name="ElementShortName">req_blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">req_blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider139" type="divider">
+      <obj_property name="label">Conway game</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/fsm">
+      <obj_property name="ElementShortName">fsm</obj_property>
+      <obj_property name="ObjectShortName">fsm</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/s_cnt_col">
+      <obj_property name="ElementShortName">s_cnt_col</obj_property>
+      <obj_property name="ObjectShortName">s_cnt_col</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/s_cnt_line">
+      <obj_property name="ElementShortName">s_cnt_line</obj_property>
+      <obj_property name="ObjectShortName">s_cnt_line</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/s_around_cell">
+      <obj_property name="ElementShortName">s_around_cell[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_around_cell[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/s_neighbours">
+      <obj_property name="ElementShortName">s_neighbours</obj_property>
+      <obj_property name="ObjectShortName">s_neighbours</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider145" type="divider">
+      <obj_property name="label">Conway display</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/pixel_ligne">
+      <obj_property name="ElementShortName">pixel_ligne[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_ligne[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/pixel_col">
+      <obj_property name="ElementShortName">pixel_col[15:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_col[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/red">
+      <obj_property name="ElementShortName">red[3:0]</obj_property>
+      <obj_property name="ObjectShortName">red[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/green">
+      <obj_property name="ElementShortName">green[3:0]</obj_property>
+      <obj_property name="ObjectShortName">green[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/blue">
+      <obj_property name="ElementShortName">blue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/conway_tb_wrapper/conway_tb_i/conway_game_0/U0/s_disp">
+      <obj_property name="ElementShortName">s_disp</obj_property>
+      <obj_property name="ObjectShortName">s_disp</obj_property>
+   </wvobject>
+</wave_config>

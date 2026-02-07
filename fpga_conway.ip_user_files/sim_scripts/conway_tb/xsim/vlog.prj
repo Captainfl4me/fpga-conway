@@ -1,0 +1,8 @@
+verilog xil_defaultlib  \
+"../../../bd/conway_tb/ip/conway_tb_sim_clk_gen_0_0/sim/conway_tb_sim_clk_gen_0_0.v" \
+"../../../bd/conway_tb/ip/conway_tb_xlconstant_0_0/sim/conway_tb_xlconstant_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/conway_top/ip/conway_top_vga_controller_0_0/sim/conway_top_vga_controller_0_0.vhd" \
+"../../../bd/conway_top/ip/conway_top_pattern_generator_0_1/sim/conway_top_pattern_generator_0_1.vhd" \
+"../../../bd/conway_top/ip/conway_top_proc_sys_reset_0_0/sim/conway_top_proc_sys_reset_0_0.vhd" \
+"../../../bd/conway_top/ip/conway_top_conway_game_0_0/sim/conway_top_conway_game_0_0.vhd" \
+"../../../bd/conway_top/ip/conway_top_vga_mux_0_0/sim/conway_top_vga_mux_0_0.vhd" \
+"../../../bd/conway_top/ip/conway_top_input_ctrl_0_0/sim/conway_top_input_ctrl_0_0.vhd" \
+"../../../bd/conway_top/sim/conway_top.vhd" \
+
+# Do not sort compile order
+nosort

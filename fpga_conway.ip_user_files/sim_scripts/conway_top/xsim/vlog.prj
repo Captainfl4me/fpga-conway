@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../fpga_conway.gen/sources_1/bd/conway_top/ipshared/3cbc" \
+"../../../bd/conway_top/ip/conway_top_clk_wiz_0_0/conway_top_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/conway_top/ip/conway_top_clk_wiz_0_0/conway_top_clk_wiz_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

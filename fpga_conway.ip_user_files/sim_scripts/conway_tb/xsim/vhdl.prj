@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/conway_tb/ip/conway_tb_vga_controller_0_0/sim/conway_tb_vga_controller_0_0.vhd" \
+"../../../bd/conway_tb/ip/conway_tb_pattern_generator_0_0/sim/conway_tb_pattern_generator_0_0.vhd" \
+"../../../bd/conway_tb/ip/conway_tb_conway_game_0_0/sim/conway_tb_conway_game_0_0.vhd" \
+"../../../bd/conway_tb/sim/conway_tb.vhd" \
+
+# Do not sort compile order
+nosort
